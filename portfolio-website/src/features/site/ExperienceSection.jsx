@@ -1,10 +1,9 @@
-import {Resume} from "../../assets/Resume_J_E_2026.pdf";
 export default function ExperienceSection() {
   return (
     <section className="py-24 bg-surface-container-lowest" id="experience">
       <div className="max-w-7xl mx-auto px-8">
         <h2 className="text-4xl font-bold mb-16 text-center">
-          Journey &amp; Milestones
+          Experience &amp; Education
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 relative">
@@ -102,7 +101,7 @@ export default function ExperienceSection() {
         </div>
       </div>
       <div
-        href="../../assets/Resume_J_E_2026.pdf"
+        href="/resume.pdf"
         download="Resume_J_E_2026.pdf"
         className="flex justify-center"
       >
