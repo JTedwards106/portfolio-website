@@ -18,7 +18,7 @@ export default function CoreCompetenciesSection() {
           </h3>
           <p class="text-on-surface-variant mb-6">
             Architecting robust frontends with React and scalable backends using
-            Node.js and Flask. Expert in both relational SQL and NoSQL databases
+            Node.js and PHP. Expert in both relational SQL and NoSQL databases
             like MongoDB.
           </p>
           <div class="flex flex-wrap gap-2">
@@ -29,7 +29,7 @@ export default function CoreCompetenciesSection() {
               Node.js
             </span>
             <span class="px-3 py-1 bg-surface-dim text-xs rounded-full border border-outline-variant/20">
-              Flask
+              PHP
             </span>
             <span class="px-3 py-1 bg-surface-dim text-xs rounded-full border border-outline-variant/20">
               MongoDB

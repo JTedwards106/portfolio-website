@@ -8,11 +8,10 @@ export default function HeroSection() {
     >
       <div class="z-10 w-full lg:w-2/3">
         <span class="inline-block px-3 py-1 bg-primary-container/20 text-primary border border-primary/20 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
-          Available for Projects
+          Available for Full-Time Employment
         </span>
         <h1 class="text-5xl md:text-7xl font-bold font-headline tracking-tighter mb-6 leading-[1.1]">
-          Final Year <span class="text-primary">Computing</span> Student &amp;
-          Software Developer
+          <span class="text-primary">Full-Stack</span> Software Developer
         </h1>
         <p class="text-xl text-on-surface-variant mb-10 max-w-xl leading-relaxed">
           Building intelligent systems and scalable web applications with a
@@ -22,7 +21,7 @@ export default function HeroSection() {
           <button
             type="button"
             className="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary transition-all duration-300 scale-102 flex items-center gap-2"
-            onClick={() => scrollToId('portfolio')}
+            onClick={() => scrollToId("portfolio")}
           >
             View Portfolio
             <i className="fa-solid fa-arrow-right text-lg" aria-hidden="true" />
@@ -30,7 +29,7 @@ export default function HeroSection() {
           <button
             type="button"
             className="border border-outline-variant/20 bg-surface-bright/5 hover:bg-surface-bright/10 text-on-surface px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300"
-            onClick={() => scrollToId('contact')}
+            onClick={() => scrollToId("contact")}
           >
             Contact Me
           </button>

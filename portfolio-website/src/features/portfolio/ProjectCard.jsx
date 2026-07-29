@@ -1,4 +1,12 @@
-export default function ProjectCard({ title, tags, imageAlt, imageSrc, description , badge, color}) {
+export default function ProjectCard({
+  title,
+  tags,
+  imageAlt,
+  imageSrc,
+  description,
+  badge,
+  link,
+}) {
   return (
     <div className="group bg-surface-container rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500">
       <div className="relative aspect-video overflow-hidden">
@@ -8,7 +16,9 @@ export default function ProjectCard({ title, tags, imageAlt, imageSrc, descripti
           data-alt={imageAlt}
           src={imageSrc}
         />
-        <span class="absolute top-4 left-4 px-3 py-1 bg-primary text-on-primary text-[10px] font-bold uppercase rounded">{badge}</span>
+        <span class="absolute top-4 left-4 px-3 py-1 bg-primary text-on-primary text-[10px] font-bold uppercase rounded">
+          {badge}
+        </span>
         <div className="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60" />
       </div>
 
@@ -24,9 +34,21 @@ export default function ProjectCard({ title, tags, imageAlt, imageSrc, descripti
             </span>
           ))}
         </div>
-        <p className="text-on-surface-variant text-sm line-clamp-2">{description}</p>
+        <p className="text-on-surface-variant text-sm line-clamp-2">
+          {description}
+        </p>
+        <a
+          href={link}
+          target="_blank"
+          class="mt-5 text-base font-bold flex items-center gap-2 hover:gap-4 transition-all"
+        >
+          View {title === "Financial Aid Platform" ? "Demo" : "Source Code"}{" "}
+          <i
+            class="fa-solid fa-arrow-up-right-from-square"
+            aria-hidden="true"
+          ></i>
+        </a>
       </div>
     </div>
-  )
+  );
 }
-

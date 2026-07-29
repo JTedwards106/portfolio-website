@@ -1,38 +1,38 @@
 // data/projects.js
 export const projects = [
   {
-    title: "Intelligent Scholarship System",
+    title: "Financial Aid Platform",
+    tags: ["Flutter", "Firebase", "OpenAI"],
+    imageAlt:
+      "Digital platform UI showing scholarship search results and filters",
+    imageSrc:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuD84TCXpwIbME-t9Z50LoDerzEl7RFMxJ8CUXLytszrNk8_z9fzcqy6M85chPXVb1WCLFlTE4XNsadVIIgvmSiupbyfbE4UXYus3pnrUrtYa39EtORDlHLOKrj20E-lkCZ40SApvs_Y29vXcovpvjxS5RIcQKd7_m_KZHSJ5fBP-262B44uE4Wbz67GRIK6ukqXCf-aT6FS30IPhr9g6lrg-EocJXN-g0wxQ4Bxes7Qky9ANEfgpRC2mMDovJJEzs3eY4PBhmINw1c",
+    feature: "AI Enabled",
     description:
-      "Automated scholarship filtering system using Firebase and AI...",
-    tags: ["React", "Firebase"],
-    imageAlt: 'Map UI with optimized vehicle paths and logistics markers',
-    imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6AXuAYyDg8HDfwt8S_x8o0-APFUGkkjujBQwJVHD-vwy2QbMgNiZ7XDSKDPAX1t6VIjDTmZrIYXGWJ1JSMfpHkWRWow0P5dGZAbsPCekIygLoR5uLa7dO_n2Fijg4jp5SKH0a-CU26c3eKDEbhbsYTrON_mRlPbzSuAW9MN2llfIAAxVLrs06N8d2p7TArpnQCGUu6RzdNiYn39ZoIAK0WY8_gIOHxEFKDEBHyM5LNHPohTGfHKMw4FWEYum5nhwPXvXatXVjgGdMUocg",
-    badge: "AI Enabled",
-    color: "primary",
-    linkText: "Case Study",
+      "An AI-driven platform that matches students with Caribbean scholarships based on automated profile scanning.",
+    link: "https://financial-aid-firebase.web.app/",
   },
   {
-    title: "Smart Water Dashboard",
+    title: "Smart Water System",
+    tags: ["React", "Java", "Spring Boot", "PostgreSQL"],
+    imageAlt:
+      "Modern analytics dashboard showing water consumption metrics and graphs",
+    imageSrc:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuC-IZwJmF_C5HYXfEt_G8EUSP1-hiBq9gbJ4b4_m3wm-vOKL3Y7qzX6sTFgyqH3gvrQyIMtAz72AzIvwfGD5VOnc5vNmi3CYgNgGvmnVjNsg8EhzxUnBJEr3TtnE6WvtTzvrvQ1xgdEC44tqPCcUQkCbpYgexh3aig9ze3sZjOElY4H21OnQATrlK7YpKezel1V-cGchPERHRBaVkFkkOzoA3P0VVW8jN9NKLCujAFpTEKFhWfciISREoiVRK1WrGlASKMBKBVuB00",
+    feature: "AI Enabled",
     description:
-      "A real-time monitoring system visualizing sensor data...",
-    tags: ["Java (Spring Boot)", "React.js", "ESP"],
-    imageAlt: 'Water Monitoring Visuals',
-    imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6A…cjtBfhpWM6RMaj6izyueAWd_FYA73wXiXeE7HaHtDcWqlb5ao",
-    badge: "Real-time",
-    color: "tertiary",
-    linkText: "Source Code",
+      "Real-time monitoring system for utility tracking with predictive maintenance alerts.",
+    link: "https://github.com/JTedwards106/water-system",
   },
   {
-    title: 'Route Optimization Pro',
+    title: "Route Optimization Pro",
+    tags: ["Google Maps API", "Node.js", "PostgreSQL"],
+    imageAlt: "Map UI with optimized vehicle paths and logistics markers",
+    imageSrc:
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuBDcLy7Xh5wwgBOMBARWMyqvHAmW8kdvETvh3fnrVe5gs8BIpGRgTvt0Rwdy-5B3wGpB6icYCM_HEaTZ6lsimDtEget4ySISZaWuy0QHrrXDeQnp_73ebB_o9zl7x-urUC-kBUOBMKbKPf9mV2KfiPS54P0R0GHIEHJlIjaBvSKI_XvLoOagRr7AO3hlqyVuRuDWvIhkVaeA2icmRaUtZBGtUObVAT1drYMvYcuI7_C__1hy5sZMKWPLj_NAEEWN6M7JJYfmWRXcvU",
+    feature: "AI Enabled",
     description:
-      'Logistics solution for courier services using graph algorithms to reduce travel time by 25%.',
-
-    tags: ['Java','Google Maps API', 'PostgreSQL'],
-    imageAlt: 'Map UI with optimized vehicle paths and logistics markers',
-    imageSrc: "https://lh3.googleusercontent.com/aida-public/AB6A…iBtHUU6YAer9l_8IBInLrJ8_xy8jW_o0mLtgwV_S6uws5pplQ",
-    badge: "Algorithmn",
-    color: "tertiary",
-    linkText: "View Demo",
-    }
+      "Logistics solution for courier services using graph algorithms to reduce travel time by 25%.",
+    link: "",
+  },
 ];
-
