@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import FaqAccordion from './FaqAccordion'
 
 export default function ContactSection() {
   const [form, setForm] = useState({
@@ -19,44 +20,15 @@ export default function ContactSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
         {/* FAQ */}
         <div>
-          <h2 className="text-4xl font-bold mb-12">Common Inquiries</h2>
-          <div className="space-y-8">
-            <div className="group">
-              <h4 className="text-xl font-bold mb-2 flex items-center gap-2 group-hover:text-primary transition-colors">
-                Are you available for internships?
-                <i className="fa-solid fa-plus text-sm" aria-hidden="true" />
-              </h4>
-              <p className="text-on-surface-variant leading-relaxed">
-                Yes! As a final-year student, I am actively seeking full-time opportunities and internships
-                starting Summer 2024.
-              </p>
-            </div>
-
-            <div className="group">
-              <h4 className="text-xl font-bold mb-2 flex items-center gap-2 group-hover:text-primary transition-colors">
-                What is your primary tech stack?
-                <i className="fa-solid fa-plus text-sm" aria-hidden="true" />
-              </h4>
-              <p className="text-on-surface-variant leading-relaxed">
-                I am most proficient in Java, JavaScript (React/Node), and Python, though I am language-agnostic
-                when solving architecture problems.
-              </p>
-            </div>
-
-            <div className="group">
-              <h4 className="text-xl font-bold mb-2 flex items-center gap-2 group-hover:text-primary transition-colors">
-                Do you work on mobile applications?
-                <i className="fa-solid fa-plus text-sm" aria-hidden="true" />
-              </h4>
-              <p className="text-on-surface-variant leading-relaxed">
-                I specialize in progressive web apps and cross-platform solutions using React Native.
-              </p>
-            </div>
-          </div>
+          <h2 className="text-4xl font-bold mb-4">Common Inquiries</h2>
+          <p className="text-on-surface-variant mb-12">
+            Quick answers to questions I get asked most often.
+          </p>
+          <FaqAccordion />
         </div>
 
         {/* Contact Form */}
-        <div className="bg-surface-container rounded-3xl p-10 lg:p-16 relative overflow-hidden">
+        <div className="bg-surface-container-low rounded-3xl border border-outline-variant/30 p-10 lg:p-16 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary-container/10 blur-[100px] rounded-full -mr-32 -mt-32" />
           <h2 className="text-4xl font-bold mb-4 relative z-10">Let’s build something impactful</h2>
           <p className="text-on-surface-variant mb-12 relative z-10">

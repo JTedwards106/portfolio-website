@@ -30,13 +30,13 @@ export default function ExperienceSection() {
                 University of Technology, Jamaica
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-surface-container-high rounded-full text-xs uppercase tracking-wider font-bold">
+                <span className="px-3 py-1 bg-surface-container-high border border-outline-variant/30 rounded-full text-xs uppercase tracking-wider font-bold text-on-surface-variant">
                   AI Focus
                 </span>
-                <span className="px-3 py-1 bg-surface-container-high rounded-full text-xs uppercase tracking-wider font-bold">
+                <span className="px-3 py-1 bg-surface-container-high border border-outline-variant/30 rounded-full text-xs uppercase tracking-wider font-bold text-on-surface-variant">
                   Software Engineering
                 </span>
-                <span className="px-3 py-1 bg-surface-container-high rounded-full text-xs uppercase tracking-wider font-bold">
+                <span className="px-3 py-1 bg-surface-container-high border border-outline-variant/30 rounded-full text-xs uppercase tracking-wider font-bold text-on-surface-variant">
                   Data Structures and Algorithms
                 </span>
               </div>

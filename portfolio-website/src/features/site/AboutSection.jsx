@@ -35,13 +35,13 @@ export default function AboutSection() {
           <div class="mt-12 flex gap-8 border-t border-outline-variant/20 pt-8">
             <div>
               <p class="font-headline font-bold text-xl">Jamaica</p>
-              <p class="text-xs text-slate-500 uppercase tracking-widest">
+              <p class="text-xs text-on-surface-variant uppercase tracking-widest">
                 Location
               </p>
             </div>
             <div>
               <p class="font-headline font-bold text-xl">UTech</p>
-              <p class="text-xs text-slate-500 uppercase tracking-widest">
+              <p class="text-xs text-on-surface-variant uppercase tracking-widest">
                 Education
               </p>
             </div>

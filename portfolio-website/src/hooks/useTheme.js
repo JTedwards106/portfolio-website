@@ -1,25 +1,35 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 
-export function useTheme() {
-  const [isDark, setIsDark] = useState(() => {
-    return document.documentElement.classList.contains('dark')
-  })
+const STORAGE_KEY = "theme";
 
-  // Keep `isDark` in sync if something else toggles the `dark` class.
-  useEffect(() => {
-    const obs = new MutationObserver(() => {
-      setIsDark(document.documentElement.classList.contains('dark'))
-    })
-    obs.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
-    return () => obs.disconnect()
-  }, [])
-
-  function toggleTheme() {
-    const nextDark = !document.documentElement.classList.contains('dark')
-    document.documentElement.classList.toggle('dark', nextDark)
-    setIsDark(nextDark)
-  }
-
-  return { isDark, toggleTheme }
+function getIsDark() {
+  return document.documentElement.classList.contains("dark");
 }
 
+function applyTheme(isDark) {
+  document.documentElement.classList.toggle("dark", isDark);
+  localStorage.setItem(STORAGE_KEY, isDark ? "dark" : "light");
+}
+
+export function useTheme() {
+  const [isDark, setIsDark] = useState(getIsDark);
+
+  useEffect(() => {
+    const obs = new MutationObserver(() => {
+      setIsDark(getIsDark());
+    });
+    obs.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+    return () => obs.disconnect();
+  }, []);
+
+  function toggleTheme() {
+    const nextDark = !getIsDark();
+    applyTheme(nextDark);
+    setIsDark(nextDark);
+  }
+
+  return { isDark, toggleTheme };
+}

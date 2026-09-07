@@ -28,7 +28,7 @@ export default function HeroSection() {
           </button>
           <button
             type="button"
-            className="border border-outline-variant/20 bg-surface-bright/5 hover:bg-surface-bright/10 text-on-surface px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300"
+            className="border border-outline-variant bg-surface-container-high hover:bg-surface-container text-on-surface px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300"
             onClick={() => scrollToId("contact")}
           >
             Contact Me
